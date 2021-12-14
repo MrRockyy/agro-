@@ -1,0 +1,228 @@
+li {
+    display: inline;
+    float: left;
+    height: auto;
+    width: auto;
+    font-family: monospace;
+}
+a {
+    display: block;
+    padding: 8px;
+ 
+}
+.button{
+    background-color:  #54A838 ;
+    color: white;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 60px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.button:hover{
+    transition: 0.5s;
+    background-color:  #d3d600 ;
+    color: black;
+}
+
+
+ul {
+    
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    height: 55px;
+
+    
+}   
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #214D19;
+    transition: 1s;
+}
+.active {
+    background-color: #36A13D;
+}
+.about {
+    float: right;
+}
+body {
+    background-image: url("./img/pexels-helena-lopes-4731083 (1).jpg");
+   
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+}
+.container{
+   padding-top: 120px;
+   padding-left: 0px;
+   padding-right: 0px;
+   margin: 0px;
+   display: grid;
+   grid-gap: 50px;
+   row-gap: 50px;
+   grid-template-columns: 30% 30% 30% ;
+ 
+   justify-items: center;
+   
+}
+.block{
+    background-color: #1B502E;;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 0;
+    border-radius: 10% 10% 0 0;
+    color:#DBDBDB;
+    font-family:monospace;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+ 
+  
+    
+   
+  }
+  a{
+      text-decoration: none;
+  }
+ .block:hover{
+
+     background-color: #54A838 ;
+     transition: 0.8s;
+     transform: translateY(-4%);
+ } 
+ .imagen{
+     width: 100%;
+     height: 80%;
+     border-radius: 10% 10% 5% 5%;
+ }
+
+.fa-bars{
+   color: white;
+   background-color: none;
+   border-color: none;
+   padding: 0;
+}
+.nav-button{
+    background: none;
+    border: none;
+    font-size: 40px;
+    display: none;
+    
+}
+.res-ul{
+    display: none;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+ 
+    .container{
+        grid-template-columns: 100% ;
+        grid-template-rows: auto;
+    }    
+    ul{
+        padding-top: 30px;
+        display: none;
+    }
+    li{
+        float:unset;
+    }
+    .nav-button{
+        display:block ;
+        float: right;
+    }
+    
+    .res-nav{
+            position: fixed;
+            width: 100%;
+            right: 0%;
+          }
+    .button{
+        background-color:  #54A838 ;
+        color: white;
+        text-decoration: none;
+        float: left;
+        text-align: center;
+        border-radius: 5px;
+        margin: 5px;
+        font-family: monospace;
+        font-weight: bold;
+        margin-top: 10px;
+        position: fixed;
+    }
+    .res-ul{
+        top: 48px;
+        left: 50%;
+        background-color: #333;
+        display: block;
+        width: 50%;
+        height: auto;
+        transition: left 0.4s;
+    }
+    .visible{
+        left: 100%;
+    }
+    .fa-bars:hover{
+        transform: translateY(-4%);
+        transition: 0.5s;
+        color: yellow;
+ } 
+
+    
+    }   
+/* 
+!Aqui comienza los estilos de la pagina de ganaderia 
+     */
+       
+.targets-ganaderia{
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    display: grid;
+    grid-gap: 0px;
+    row-gap: 50px;
+    grid-template-columns: 45% 45%;
+  grid-template-rows: auto;
+    justify-items: center;
+    
+   
+    
+}
+@media screen and (max-width: 768px){
+    .targets-ganaderia{
+        grid-template-columns: 100%;
+        grid-template-rows:auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cerdo{
+        height: 250px;
+        width: 300px;
+    }
+}
+
+.res-nav{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
